@@ -36,7 +36,7 @@ if test -d ~/Applications/depot_tools
     end
 end
 
-
+set -p LIBVA_DRIVER_NAME i965
 ## Starship prompt
 # if status --is-interactive
 #    source ("/usr/bin/starship" init fish --print-full-init | psub)

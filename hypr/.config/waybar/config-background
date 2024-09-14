@@ -23,13 +23,12 @@
     "custom/updates", 
     "backlight",
     
-    //"custom/keyboard-layout",
+    "custom/keyboard-layout",
     "temperature",
     "cpu",
     "memory",
     "battery",
-    //"network",
-    "custom/network_traffic",
+    "network",
     "tray",
     "idle_inhibitor",
     "pulseaudio",
@@ -125,7 +124,7 @@
   "hyprland/window": {
     "format": "{}",
     "icon":true,
-   // "icon-size":20
+    "icon-size":14
   },
   "idle_inhibitor": {
     "format": "{icon}",
@@ -135,7 +134,7 @@
     }
   },
   "tray": {
-    //"icon-size": 20,
+    "icon-size": 14,
     "spacing": 5
   },
   "clock": {
