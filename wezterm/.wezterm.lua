@@ -3,7 +3,7 @@ return {
 	-- color_scheme = 'termnial.sexy',
 	color_scheme = "Catppuccin Mocha",
 	enable_tab_bar = false,
-	font_size = 11.0,
+	font_size = 12.0,
 	font = wezterm.font("MesloLGS Nerd Font Mono"),
 	-- macos_window_background_blur = 40,
 	-- macos_window_background_blur = 30,

@@ -14,13 +14,14 @@ for_window [class="^.*"] border pixel 1
 set $mod Mod4
 # set $mod Mod1
 
-exec --no-startup-id picom
+exec_always --no-startup-id killall picom
+exec_always --no-startup-id picom
 exec_always --no-startup-id feh --bg-scale  $HOME/.local/share/backgrounds/tropic_island_night.jpg
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id setxkbmap -option ctrl:nocaps
 
 # kill any hanging polybar processes
-exec_always killall polybar
+exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 
 bindsym Print exec maim "/home/$USER/Pictures/$(date).jpg"
@@ -40,6 +41,7 @@ font pango:MesloLGS Nerd Font Mono Bold 14
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+exec_always --no-startup-id autotiling
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -72,7 +74,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec /home/linuxbrew/.linuxbrew/bin/wezterm
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
