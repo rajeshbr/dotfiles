@@ -38,6 +38,8 @@ return {
 				"prismals",
 				"pyright",
 				"jdtls",
+				"gopls",
+				--	"delve",
 			},
 		})
 

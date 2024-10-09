@@ -1,6 +1,6 @@
 local wezterm = require("wezterm")
 return {
-	-- color_scheme = 'termnial.sexy',
+	--	color_scheme = "termnial.sexy",
 	color_scheme = "Catppuccin Mocha",
 	enable_tab_bar = false,
 	font_size = 12.0,
