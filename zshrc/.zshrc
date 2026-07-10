@@ -109,3 +109,5 @@ export PATH="/opt/homebrew/opt/influxdb@1/bin:$PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 eval "$(zoxide init  zsh)"
+
+. "$HOME/.local/bin/env"

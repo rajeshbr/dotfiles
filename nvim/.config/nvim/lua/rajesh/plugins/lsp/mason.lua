@@ -39,6 +39,7 @@ return {
 				"pyright",
 				"jdtls",
 				"gopls",
+				"clangd",
 				--	"delve",
 			},
 		})
@@ -51,6 +52,7 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"eslint_d",
+				"clang-format",
 			},
 		})
 	end,
