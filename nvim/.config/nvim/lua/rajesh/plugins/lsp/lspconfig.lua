@@ -74,6 +74,26 @@ return {
 			},
 		})
 
+    -- 1. Configure the server using the new native API
+    vim.lsp.config('clangd', {
+      cmd = {
+        'clangd' -- Use system clangd from your PATH environment variable
+      },
+    })
+
+    -- 2. Turn the server on natively
+    vim.lsp.enable('clangd')
+
+    vim.lsp.config('clang-format', {
+      cmd = {
+        'clang-format' -- Use system clangd from your PATH environment variable
+      },
+    })
+
+    -- 2. Turn the server on natively
+    vim.lsp.enable('clang-format')
+
+
 		vim.lsp.config("*", {
 			capabilities = capabilities,
 		})
@@ -101,6 +121,7 @@ return {
 		vim.lsp.config("eslint", {
 			filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 		})
+    
 
 		vim.lsp.config("lua_ls", {
 			settings = {

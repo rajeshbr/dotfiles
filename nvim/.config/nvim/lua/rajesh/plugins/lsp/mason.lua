@@ -12,6 +12,7 @@ return {
 		local mason_lspconfig = require("mason-lspconfig")
 
 		local mason_tool_installer = require("mason-tool-installer")
+    
 
 		-- enable mason and configure icons
 		mason.setup({
@@ -24,6 +25,7 @@ return {
 			},
 		})
 
+   
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
@@ -38,10 +40,12 @@ return {
 				"prismals",
 				"pyright",
 				"jdtls",
-				"gopls",
-				"clangd",
+--				"gopls",
+	--			"clangd",
 				--	"delve",
 			},
+
+     
 		})
 
 		mason_tool_installer.setup({
@@ -52,8 +56,10 @@ return {
 				"black", -- python formatter
 				"pylint",
 				"eslint_d",
-				"clang-format",
+			--	"clang-format",
 			},
 		})
+
+
 	end,
 }
