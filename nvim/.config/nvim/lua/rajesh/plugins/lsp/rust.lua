@@ -20,6 +20,10 @@ return {
             },
           },
         },
+        dap = {
+          -- Instructs rustaceanvim to utilize standard lldb from nvim-dap
+          adapter = require('dap').adapters.lldb,
+        },
       }
     end
   },
